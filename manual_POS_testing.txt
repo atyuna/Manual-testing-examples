@@ -1,0 +1,67 @@
+# Test Case 1 : Authorization PIN.
+**Objective:**  To verify that the Authorization PIN feature functions as expected and meets the requirement of accepting
+only 1 to 10 numeric values and enabling cancellation of orders only when the PIN is entered.
+**Preconditions:** The rule for the Pin fields is a numeric value from 1 up to10 digits.
+
+**Steps:**
+1. Go to the Pins section, fill in the field Authorization PIN, ignoring the rule, with letters and symbols.
+     - **Expected Result:** On the top of the page appears: A PIN must only be comprised of numbers.
+2. Fill in the field Authorization PIN, ignoring the rule, with more than 10 numbers.
+     - **Expected Result:**  On the top of the page appears: A Pin must be a numericvalue from 1 up to 10 digits.
+3. Fill in the field Authorization PIN, with a valid value.
+     - **Expected Result:** Authorization PIN Settings expands with features, that will require Authorisation Pin: 
+Issue Refunds, Cancel Orders.
+4. Mark a checkbox, Cancel Orders, in Authorization PIN Settings. Click on Save.
+     - **Expected Result:** The message appears that the selected features below on the apps will require this PIN before being able to use them.
+5. Launch the app. make an order, try to cancel it.
+     - **Expected Result:** An Authorization PIN popup appears.
+6. Enter Authorization PIN. Submit.
+     - **Expected Result:** The order is cancelled.
+
+# Test Case 2 : Connection of multiple Master app.
+**Objective:**  Verify that multiple Master apps can be connected.
+**Preconditions:**
+- The user must have increased the limit of masters up to 3.
+
+**Steps:**
+1. Log in as a Master on 3 iPads.
+   - **Expected Result:** On the dashboard for Multi apps there is a Multiple M button.
+2. Start configuring all the masters. 
+Open the dashboard, tap on the Multiple M button, confirm the configuration. 
+   - **Expected Result:** After 1-2 minutes, all the masters got assigned a serial number. 
+   On the screen in the upper right there is a number on a black background. 
+3. Check reconfiguration 
+(master joined/disconnected). 
+   - **Expected Result:** Information on the number of masters was updated on the server. 
+4. Connect 2 Masters. Pay attention to the popup menu that appears.
+Check the same with 3 Masters.
+   - **Expected Result:** A pop-up menu appears with a list of 3 masters. You can switch between masters.
+   IMPORTANT: the maximum number of masters registered in the config should be displayed in the drop-down list!
+   that is if 1 master is connected, and by subscription, there can be 3 of them - 3 MASTERS MUST BE DISPLAYED."
+
+
+
+# Test Case 3 : Menu Integration Tests:
+**Objective:** Verify that enabled in admin side items are available in Uber Eats.
+
+**Steps:**
+1. Log in to the admin side system. 
+2. Verify that the menu items and prices from admin side are correctly integrated into the UberEats menu after clicking on Synch with UberEats.
+3. Verify that any updates or changes made on the admin side (name, price) are reflected in the UberEats after page refresh.
+4. Verify that items not syncronised to UberEats are not present there.
+5. Verify that items out of stock are not present in the UberEats menu.
+
+**Expected Result:** The menu items and prices from admin side are correctly integrated into UberEats system and displayed accurately.
+Any updates or changes made in admin side are reflected in the UberEats system after page refresh.
+
+
+# Test Case 4 : Order Integration Test:
+**Objective:** To ensure that orders placed through the UberEats platform are automatically and accurately integrated into the POS system.
+
+**Steps:**
+1. Place an order through UberEats platform.
+2. Verify that the order is automatically sent to the POS system.
+3. Verify that the order details, including items, quantities, and special instructions, are correctly displayed on the POS system.
+4. Repeat the above steps for multiple orders and ensure that all orders are correctly displayed on the POS system.
+
+**Expected Result:** The order details are correctly displayed on the POS system.
