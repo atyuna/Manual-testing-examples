@@ -1,0 +1,51 @@
+# Test Case 1 : Incomplete Placement Test measures Status Test
+**Objective:** Check Placement Test status for students when not all required measures are completed
+
+**Steps:**
+1. Add K grade, 1 Grade, 2 Grade, 3 Grade, 4 Grade, 5 Grade, 6 Grade students in BOY period and assign class for them
+    Expected result - Students are added into class
+2. Go to Dashboard page, Benchmark tab, choose the class in the drop down
+    Expected result - Students from the class are shown
+3. Assess some measures for students K Grade (NWF, WRF), 1 Grade (NWF, PSF), 2 Grade (ORF, WRF), 3 Grade (ORF, Maze), 
+Grade (ORF with Well Bellow Benchmark result), 5 Grade (ORF with Bellow Benchmark result), 6 Grade (Maze)
+    Expected result - The results are saved 
+4. Sync data
+    Expected result - Sync completed successfully
+5. Check Intervention Placement column in Benchmark tab
+   Expected result - It is empty for all the students from the class
+6. Go to Create Group page, select the class with the students, press [Next Step] btn and then [Continue] btn in the pop up
+   Expected result - Selected Classes view is shown. Students are shown with exclamation mark and yellow triangle icon
+7.  Press [Create Group] btn  
+   Expected result - Selected Classes view is opened. Students are shown with exclamation mark and triangle icon.
+ 
+
+
+# Test Case 2 : Invalidate assessment by county user in PM period
+**Objective:** Verify that county user can invalidate assessment result in PM period
+
+**Preconditions:** tets user should have county rights
+
+**Steps:**
+1. Go admin page 
+    Expected result - admin page is opened
+2. Choose class with 4 Grade student 
+    Expected result - The class is chosen
+3. Switch on to PM period
+    Expected result - Switcher is set to PM
+4. In admin page mark checkbox for "Off-grade G3" for the student
+    Expected result - The checkboxes are marked
+5. Login to assessment https://site.com , assess [assessment]
+    Expected result - Assessment is assessed with 20th form
+6. Go to https://site2/summary , choose the class and check recent PM history for the student
+    Expected result -  "assessment" is written in recent PM history for the student
+7. Click on [assessment] in recent PM history
+    Expected result - "assessment" result table and chart are shown
+8. Check table and chart
+    Expected result - The row with appropriate results are shown in the table, on the chart score is shown as white square
+9. Click on row in the table
+    Expected result - Details view is opened for the assessment (PM-20 assessment details), it shows correct results and the aswers 
+    chosen by student, score.
+10. Back to table and chart, invalidate [assessment] (by clicking on pen icon in the table and choose delete entry)
+    Expected result -10. [assessment] probe is invalidated
+11. Login to assessment https://site again, assess [assessment], check the form
+    Expected result - [assessment] is assessed with 20th form
