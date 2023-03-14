@@ -1,0 +1,7 @@
+Test plan for every feature (should include happy paths, sad paths)
+# Test plan for the sprint
+
+|    Scenario  |  Expected result | Latest result | Nees to automate  |
+
+
+/// Need to add details
