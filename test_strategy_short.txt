@@ -1,0 +1,28 @@
+
+
+  INTRODUCTION (high level summary of the project)
+  
+  REFERENCES (links and helpful information about project and its stack)
+  
+  OBJECTIVE: The objective of testing is to ensure that the product is functioning as expected, meets the business requirements, is secure, and provides an optimal user experience to customers.
+  
+  QA DELIVERABLES: - test plans for each feature; - reported bugs, - usability suggestions; -release process document; - test reports
+
+  SCOPE OF TESTING:
+- Testing Approach: The testing approach will be a combination of manual and automated testing to cover the various aspects of the site.
+- Testing Types: The following testing types will be included:
+* Functional Testing: To test the site's functionality, such as product search, add-to-cart, checkout, payment, and order processing.
+* Performance Testing: To test the site's performance under different loads, such as peak traffic times and number of concurrent users.
+* Security Testing: To test the site's security, such as authentication, authorization, data encryption, and secure connections.
+* Usability Testing: To test the site's usability, such as ease of navigation, layout, and accessibility.
+* Compatibility Testing: To test the site's compatibility with different devices, browsers, and operating systems.
+
+  TEST MANAGEMENT (what resources needed to carry out testing in terms of tooling, environments, supported platforms and versions and test data )
+- Test Environment: The test environment will consist of various hardware and software configurations, including the operating system, web server, database server, and client devices.
+- Test Data: Test data will be generated and/or sourced from real-world scenarios to simulate different use cases, including product data, customer data, and payment data.
+- Test Tools: (list of tools)
+
+- Test Reporting: Test reports will be generated after each round of testing, including test case results, bug reports, and a summary report.
+- Testing Schedule: The testing schedule will be determined based on the project timeline and milestones, with testing activities integrated into each phase of development.
+- Risk Management: Risk management strategies will be in place to identify and mitigate potential risks associated with the site, such as security vulnerabilities, performance issues, and usability problems.
+- Test Sign-Off: The site will be signed-off for release after all test cases have been executed successfully, and all identified issues have been resolved and verified.
