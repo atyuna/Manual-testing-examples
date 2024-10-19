@@ -1,13 +1,12 @@
-# Test Case 1 : Authorization PIN.
-**Objective:**  To verify that the Authorization PIN feature functions as expected and meets the requirement of accepting
-only 1 to 10 numeric values and enabling cancellation of orders only when the PIN is entered.
-**Preconditions:** The rule for the Pin fields is a numeric value from 1 up to10 digits.
+# Test Case 1 : Authorization PIN Required for Cancelling Orders.
+**Objective:**  To verify that the Authorization PIN feature functions as expected and meets the requirement of accepting only 1 to 10 numeric values and enabling cancellation of orders only when the PIN is entered.
+**Preconditions:** The rule for the Pin fields is a numeric value from 1 up to 10 digits.
 
 **Steps:**
 1. Go to the Pins section, fill in the field Authorization PIN, ignoring the rule, with letters and symbols.
-     - **Expected Result:** On the top of the page appears: A PIN must only be comprised of numbers.
+     - **Expected Result:** An error message appears at the top of the page: "A PIN must only be comprised of numbers."
 2. Fill in the field Authorization PIN, ignoring the rule, with more than 10 numbers.
-     - **Expected Result:**  On the top of the page appears: A Pin must be a numericvalue from 1 up to 10 digits.
+     - **Expected Result:**  An error message appears at the top of the page: "A PIN must be a numeric value from 1 to 10 digits."
 3. Fill in the field Authorization PIN, with a valid value.
      - **Expected Result:** Authorization PIN Settings expands with features, that will require Authorisation Pin: 
 Issue Refunds, Cancel Orders.
@@ -48,11 +47,11 @@ Check the same with 3 Masters.
 1. Log in to the admin side system. 
 2. Verify that the menu items and prices from admin side are correctly integrated into the UberEats menu after clicking on Synch with UberEats.
 3. Verify that any updates or changes made on the admin side (name, price) are reflected in the UberEats after page refresh.
-4. Verify that items not syncronised to UberEats are not present there.
+4. Verify that items not synchronised to UberEats are not present there.
 5. Verify that items out of stock are not present in the UberEats menu.
 
 **Expected Result:** The menu items and prices from admin side are correctly integrated into UberEats system and displayed accurately.
-Any updates or changes made in admin side are reflected in the UberEats system after page refresh.
+Any updates or changes made in the admin side are reflected in the UberEats system after page refresh.
 
 
 # Test Case 4 : Order Integration Test:
